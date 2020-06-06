@@ -1,10 +1,18 @@
 import * as React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Image } from "react-native";
 import FastImage from "react-native-fast-image";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <Image
+        style={{ height: 100, width: 100 }}
+        source={{ uri: "https://dummyimage.com/600x400/000/fff" }}
+      />
+      <Image
+        style={{ height: 100, width: 100 }}
+        source={{ uri: "https://loremflickr.com/320/240" }}
+      />
       <FastImage
         style={{ height: 100, width: 100 }}
         source={{ uri: "https://dummyimage.com/600x400/000/fff" }}
