@@ -1,6 +1,6 @@
 import * as React from "react";
 import { StyleSheet, View } from "react-native";
-import { FastImage } from "react-native-fast-image";
+import FastImage from "react-native-fast-image";
 
 export default function App() {
   return (
@@ -9,10 +9,11 @@ export default function App() {
         style={{ height: 100, width: 100 }}
         source={{ uri: "https://dummyimage.com/600x400/000/fff" }}
       />
-      <FastImage
+      {/* uncomment for crash */}
+      {/* <FastImage
         style={{ height: 100, width: 100 }}
         source={{ uri: "https://loremflickr.com/320/240" }}
-      />
+      /> */}
     </View>
   );
 }
